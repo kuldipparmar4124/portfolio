@@ -33,12 +33,101 @@ html::-webkit-scrollbar-thumb{
 }
 
 body {
-    padding-left: 30rem;
+    /* padding-left: 30rem; */
     background:#eee;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+
+
+header{
+        width: 100%;
+        position: fixed;
+    height: 50px;
+    z-index: 9999;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Logo a{
+    color: rgb(44, 44, 44);
+    font-size: 2.8rem;
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav ol{
+    display: flex;
+    list-style: none;
+}
+.nav ol li{
+    margin: 1rem;
+    font-size: 2rem;
+}
+.nav ol li a{
+    text-decoration: none;
+    padding: 0.2rem 1.2rem 0.9rem 1.2rem;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39, 39, 39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 7px;
+    /* background: #853333; */
+    transform-origin: bottom;
+    background: linear-gradient(to right, #dcb5c2, #d978cc, #ed55cc); 
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
+}
+.nav ol li a:hover::before{
+    transform: scaleY(.9);
+}
+.nav ol li a:hover{
+    color: white;
+}
+
+.btn4{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+.btn4::before{
+    content: '\f0c9';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2.5rem;
+
+    }
+
+
+
+
+
+
+
+
+
+
+/* header {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -53,9 +142,9 @@ header {
     width: 30rem;
     text-align: center;
     transition: 0.5s ease-in-out;
-}
+} */
 
-header .logo {
+/* header .logo {
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
@@ -103,7 +192,7 @@ header .sci a:hover {
     cursor: pointer;
     z-index: 10000;
     display: none;
-}
+} */
 
 /* home start  */
 
@@ -141,7 +230,8 @@ header .sci a:hover {
     width:25rem;
     border-radius: 50%;
     object-fit: cover;
-    border:1rem solid var(--green);
+    
+    border: 1rem solid var(--green);
 }
 
 .home .content h3{
@@ -173,17 +263,17 @@ header .sci a:hover {
 
 .about .contentBx {
 flex-basis: 50%;
-min-width: 280px;
+min-width: 300px;
 }
 
 .about .contentBx h2 {
     color: rgb(8, 8, 8);
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 .about .contentBx h4 {
     color: rgb(6, 6, 6);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .about .contentBx h4 span {
@@ -264,8 +354,9 @@ min-width: 280px;
 }
 
  .imgBx {
-    width: 70%; 
+    width: 60%; 
     margin: auto; 
+
 }
 
 .imgBx img {
@@ -273,17 +364,19 @@ min-width: 280px;
     max-width: 100%;
     margin: 30px 0;
 }
+
 .imgBx{
     text-align: center;
     position: relative;
 }
+
 .imgBx::after{
     content: '';
     position: absolute;
     height: 100px;
     width: 100px;
-    border-bottom: 8px solid rgb(198, 78, 78);
-    border-right: 8px solid rgb(198, 78, 78);
+    border-bottom: 8px solid #f2315b;
+    border-right: 8px solid  #f2315b;
     right: -15px ;
     bottom: 20px;
     border-radius: 8px;
@@ -294,8 +387,8 @@ min-width: 280px;
     position: absolute;
     height: 100px;
     width: 100px;
-    border-top: 8px solid rgb(198, 78, 78);
-    border-left: 8px solid rgb(198, 78, 78);
+    border-top: 8px solid #f2315b;
+    border-left: 8px solid #f2315b;
     left: -15px ;
     top: 15px;
     border-radius: 8px;
@@ -304,10 +397,12 @@ min-width: 280px;
 
 /* services start  */
 
+
 .services {
     width: 100%;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 }
@@ -317,6 +412,7 @@ min-width: 280px;
     font-size: 4rem;
     position: relative;
 }
+
 .services h1::before{
     content: '';
     height: 4px;
@@ -327,6 +423,7 @@ min-width: 280px;
     left: 0;
     border-radius: 8px;
 }
+
 .services h1::after{
     content: '';
     height: 4px;
@@ -346,8 +443,10 @@ min-width: 280px;
 .services .cardBx {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
+margin: 40px 20px;
 }
 
 .services .cardBx .card {
@@ -357,8 +456,8 @@ min-width: 280px;
     margin: 30px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
     overflow: hidden;
+    border-radius: 10px;
 }
-
 
 .services .cardBx .card::before {
     position: absolute;
@@ -404,12 +503,50 @@ min-width: 280px;
     color:#000;
 }
 
+
+/* portfolio strat  */
+
 .heading{
     text-align: center;
     padding-bottom: 2rem;
     font-size: 4rem;
     text-transform: uppercase;
     color:#222;
+}
+
+.portfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h1{
+    position: relative;
+}
+
+.portfolio h1::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color:var(--green);
+    position:absolute ;
+    top: 70%;
+    left: 0;
+    border-radius: 8px;
+}
+
+.portfolio h1::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    position:absolute ;
+    top: 70%;
+    left: 0;
+    margin-top: 8px;
+    border-radius: 8px;
+    background-color:var(--green);
 }
 
 .heading span{
@@ -437,11 +574,13 @@ min-width: 280px;
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+   padding-top: 5rem;
+   padding-bottom: 2rem;
 }
 
 .portfolio .box-container .box{
-    flex:1 1 30rem;
-    border-radius: .5rem;
+    flex:1 1 40rem;
+    border-radius: 10px;
     border:1rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     position: relative;
@@ -450,7 +589,7 @@ min-width: 280px;
 }
 
 .pf-p{
-    padding: 5rem ;
+    padding: 0 5rem ;
 }
 
 .portfolio .box-container .box img{
@@ -473,6 +612,10 @@ min-width: 280px;
 .portfolio .box-container .box:hover .content{
     left:0;
 }
+
+
+ /* contact strat */
+
 
 .contact{
     padding: 5rem;
@@ -539,7 +682,6 @@ min-width: 280px;
     margin:.5rem 0;
 }
 
-
 /* footer start */
 
 .footer{   
@@ -567,7 +709,7 @@ min-width: 280px;
     body {
         padding: 0;
     }
-    
+
     section{
         padding:2rem;
     }
@@ -576,29 +718,79 @@ min-width: 280px;
         display: initial;
     }
 
-    header {
+    /* header {
         left: -120%;
-    }
+    } */
 
-    header.active {
+    /* header.active {
         left: 0%;
 
-    }
+    } */
 
 }
 
 
 @media (max-width: 450px) {
+
     html {
         font-size: 50%;
     }
 
-    header {
-        width: 100%;
-    }
+   
 
     .heading{
         font-size: 4rem;
     }
+   
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+    .btn4{
+        display: flex;
+        z-index: 100;
+    }
+    header{
+        justify-content: space-between;
+        padding: 0 2em;
+    }
+    .nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background: #F8F8F8;
+        transform: translateY(-110%);
+        transition: all .4s;
+        z-index: 99;
+    }
+    input:checked ~ .nav{
+        transform: translateY(0%);
+    }
+    input:checked::before{
+        content: '\f00d';
+    }
+}
+@media (max-width: 700px){
+    .nav ol{
+        flex-direction: column;
+        text-align: center;
+    
+    }
 }
