@@ -33,7 +33,6 @@ html::-webkit-scrollbar-thumb{
 }
 
 body {
-    /* padding-left: 30rem; */
     background:#eee;
     font-family: 'Poppins', sans-serif;
 }
@@ -43,7 +42,7 @@ body {
 header{
         width: 100%;
         position: fixed;
-    height: 50px;
+    height: 55px;
     z-index: 9999;
     background: #F8F8F8;
     display: flex;
@@ -57,7 +56,7 @@ header{
 .nav {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .nav ol{
     display: flex;
@@ -98,6 +97,22 @@ header{
 .nav ol li a:hover{
     color: white;
 }
+ .sci a {
+    font-size: 2.5rem;
+    color: rgb(34, 31, 31);
+    padding:  0 0.5rem;
+
+    
+}
+
+  .bxl-instagram:hover {
+    color: #fa063b;
+}
+  .bxl-linkedin:hover {
+    color: #2009d3;
+}
+
+
 
 .btn4{
     position: relative;
@@ -172,17 +187,6 @@ header .logo span {
     color: #fa063b; 
 } */
 
- .sci a {
-    font-size: 2.5rem;
-    color: rgb(34, 31, 31);
-    margin: 0.7rem;
-    /* align-items: center;
-    text-align: center; */
-}
-
- .sci a:hover {
-    color: #fa063b;
-}
 
 /* #menu-bars {
     position: fixed;
@@ -717,16 +721,21 @@ margin: 40px 20px;
         padding:2rem;
     }
 
-    #menu-bars {
+    /* #menu-bars {
         display: initial;
-    }
+    } */
 
     .nav ol li a{
-        font-size: 1.7rem;
+        font-size: 2.2rem;
+    padding: 0.2rem 0.3rem 0.9rem 0.3rem;
+
     }
     .sci a{
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
+    .nav ol li a:hover::before{
+    transform: scaleY(.7);
+}
 
     /* header {
         left: -120%;
@@ -776,7 +785,7 @@ margin: 40px 20px;
     }
     header{
         justify-content: space-between;
-        padding: 0 2em;
+        padding: 0 2rem;
     }
     .nav{
         width: 100%;
@@ -784,7 +793,7 @@ margin: 40px 20px;
         top: 0;
         left: 0;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         background: #F8F8F8;
         transform: translateY(-110%);
         transition: all .4s;
@@ -802,5 +811,15 @@ margin: 40px 20px;
         flex-direction: column;
         text-align: center;
     
+    }
+    .nav{
+        justify-content: center;
+
+    }
+       .nav ol li a{
+        font-size: 2.5rem;
+    }
+    .sci a{
+        font-size: 2.9rem;
     }
 }
