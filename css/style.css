@@ -53,15 +53,16 @@ header{
 .Logo a{
     color: rgb(44, 44, 44);
     font-size: 2.8rem;
-
 }
 .nav {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .nav ol{
     display: flex;
     list-style: none;
+    align-items: center;
 }
 .nav ol li{
     margin: 1rem;
@@ -144,7 +145,7 @@ header{
     transition: 0.5s ease-in-out;
 } */
 
-/* header .logo {
+ /* header .logo {
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
@@ -155,9 +156,9 @@ header{
 header .logo span {
     color: #fa063b;
     text-transform: uppercase;
-}
+} */
 
-header .navbar a {
+/* header .navbar a {
     display: block;
     font-size: 2rem;
     color: #fff;
@@ -165,23 +166,25 @@ header .navbar a {
     margin: 2rem 0;
     transition: 0.5s;
     text-align: justify;
-}
+} */
 
-header .navbar a:hover {
+/* header .navbar a:hover {
     color: #fa063b; 
-}
+} */
 
-header .sci a {
+ .sci a {
     font-size: 2.5rem;
-    color: #fff;
+    color: rgb(34, 31, 31);
     margin: 0.7rem;
+    /* align-items: center;
+    text-align: center; */
 }
 
-header .sci a:hover {
+ .sci a:hover {
     color: #fa063b;
 }
 
-#menu-bars {
+/* #menu-bars {
     position: fixed;
     top: 1rem;
     right: 1rem;
@@ -192,7 +195,7 @@ header .sci a:hover {
     cursor: pointer;
     z-index: 10000;
     display: none;
-} */
+}  */
 
 /* home start  */
 
@@ -716,6 +719,13 @@ margin: 40px 20px;
 
     #menu-bars {
         display: initial;
+    }
+
+    .nav ol li a{
+        font-size: 1.7rem;
+    }
+    .sci a{
+        font-size: 2rem;
     }
 
     /* header {
