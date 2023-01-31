@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+
     text-transform: capitalize;
     line-height: 1.5;
     outline: none; border:none;
@@ -25,7 +26,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#fff;
+    background:#eee;
 }
 
 html::-webkit-scrollbar-thumb{
@@ -34,17 +35,16 @@ html::-webkit-scrollbar-thumb{
 
 body {
     background:#eee;
-    font-family: 'Poppins', sans-serif;
 }
 
 
 
 header{
-        width: 100%;
+        width: 100%; 
         position: fixed;
     height: 55px;
     z-index: 9999;
-    background: #F8F8F8;
+    background: #eee;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +92,7 @@ header{
     transition: all .4s;
 }
 .nav ol li a:hover::before{
-    transform: scaleY(.9);
+    transform: scaleY(.7);
 }
 .nav ol li a:hover{
     color: white;
@@ -100,14 +100,13 @@ header{
  .sci a {
     font-size: 2.5rem;
     color: rgb(34, 31, 31);
-    padding:  0 0.5rem;
-
-    
+    padding:  0 0.5rem;  
 }
 
   .bxl-instagram:hover {
     color: #fa063b;
 }
+
   .bxl-linkedin:hover {
     color: #2009d3;
 }
@@ -131,75 +130,7 @@ header{
     font-family: 'Font Awesome 5 Free';
     font-weight: 700;
     font-size: 2.5rem;
-
     }
-
-
-
-
-
-
-
-
-
-
-/* header {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: #0f1818;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: column;
-    padding: 5rem 2rem;
-    z-index: 1000;
-    width: 30rem;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-} */
-
- /* header .logo {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-header .logo span {
-    color: #fa063b;
-    text-transform: uppercase;
-} */
-
-/* header .navbar a {
-    display: block;
-    font-size: 2rem;
-    color: #fff;
-    text-decoration: none;
-    margin: 2rem 0;
-    transition: 0.5s;
-    text-align: justify;
-} */
-
-/* header .navbar a:hover {
-    color: #fa063b; 
-} */
-
-
-/* #menu-bars {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    color: #fff;
-    font-size: 4rem;
-    border-radius: .5rem;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-    z-index: 10000;
-    display: none;
-}  */
 
 /* home start  */
 
@@ -218,13 +149,13 @@ header .logo span {
     width:100%;
 }
 
-.home::before{
+/* .home::before{
     content: '';
     position: absolute;
     top:0; left:0;
     height:100%;
     width:100%;
-}
+} */
 
 .home .content{
     text-align: center;
@@ -262,7 +193,7 @@ header .logo span {
 
 .about {
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     padding: 40px;
@@ -295,10 +226,6 @@ min-width: 300px;
 
 .about .contentBx .btn {
      display: flex; 
-}
-
-.about .contentBx .btn .hire:hover {
-    letter-spacing: 1px;
 }
 
 .about .contentBx .btn .cv {
@@ -361,8 +288,9 @@ min-width: 300px;
 }
 
  .imgBx {
-    width: 60%; 
+    width: 55%; 
     margin: auto; 
+    /* width: 250px; */
 
 }
 
@@ -370,6 +298,7 @@ min-width: 300px;
     border-radius: 2rem;
     max-width: 100%;
     margin: 30px 0;
+    /* width: 250px; */
 }
 
 .imgBx{
@@ -721,10 +650,6 @@ margin: 40px 20px;
         padding:2rem;
     }
 
-    /* #menu-bars {
-        display: initial;
-    } */
-
     .nav ol li a{
         font-size: 2.2rem;
     padding: 0.2rem 0.3rem 0.9rem 0.3rem;
@@ -736,15 +661,6 @@ margin: 40px 20px;
     .nav ol li a:hover::before{
     transform: scaleY(.7);
 }
-
-    /* header {
-        left: -120%;
-    } */
-
-    /* header.active {
-        left: 0%;
-
-    } */
 
 }
 
