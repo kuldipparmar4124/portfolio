@@ -218,20 +218,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
 
-    <script>
-        let menu = document.querySelector('#menu-bars');
-        let header = document.querySelector('header');
-
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            header.classList.toggle('active');
-
-        }
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            header.classList.remove('active');
-        }
-    </script>
 
     <script>
         VanillaTilt.init(document.querySelectorAll('.tilt'), {
